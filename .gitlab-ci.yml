@@ -18,6 +18,6 @@ deploy:
   services:
     - docker:dind
   script:
-    - docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY_PASSWORD https://gitlab.com/home-testing/asterisk_web
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD https://gitlab.com/home-testing/asterisk_web
     - docker build -t $CI_REGISTRY_IMAGE .
     - docker push $CI_REGISTRY_IMAGE
