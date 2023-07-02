@@ -11,7 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="Welcome to asterisk web control" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/changename">Change Name</RouterLink>
+        <RouterLink to="/changename"> Add New Number</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
