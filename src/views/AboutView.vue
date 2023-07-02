@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Enter the number you wish to Change it's name</h1>
+    <h1>This is an about page</h1>
   </div>
 </template>
 

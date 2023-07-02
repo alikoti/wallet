@@ -1,7 +1,14 @@
+<script setup>
+import NewNumber from '../components/NewNumber.vue'
+</script>
+
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Enter New Number To Be Added</h1>
   </div>
+  <main>
+    <NewNumber />
+  </main>
 </template>
 
 <style>
