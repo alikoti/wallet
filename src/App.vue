@@ -11,6 +11,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <HelloWorld msg="Welcome to asterisk web control" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/changename">Change Name</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
@@ -33,7 +34,7 @@ header {
 nav {
   width: 100%;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
   margin-top: 2rem;
 }
 
