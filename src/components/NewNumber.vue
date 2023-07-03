@@ -1,22 +1,24 @@
 <template>
-  <div class="form-container">
-    <h2>Add Data</h2>
-    <form @submit.prevent="submitForm" class="form">
-      <label for="extension" class="form-label">Extension Number:</label>
-      <input type="number" id="extension" v-model="extensionNumber" class="form-input" required>
-      
-      <label for="secret" class="form-label">Secret:</label>
-      <input type="password" id="secret" v-model="secret" class="form-input" required>
-      
-      <label for="callerid" class="form-label">Caller ID:</label>
-      <input type="text" id="callerid" v-model="callerId" class="form-input" required>
-      
-      <label for="context" class="form-label">Context:</label>
-      <input type="text" id="context" v-model="context" class="form-input" required>
-      
-      <button type="submit" class="form-button">Submit</button>
-    </form>
-  </div>
+  <WelcomeItem>
+   <div class="form-container">
+     <h2>Add Data</h2>
+     <form @submit.prevent="submitForm" class="form">
+       <label for="extension" class="form-label">Extension Number:</label>
+       <input type="number" id="extension" v-model="extensionNumber" class="form-input" required>
+       
+       <label for="secret" class="form-label">Secret:</label>
+       <input type="password" id="secret" v-model="secret" class="form-input" required>
+       
+       <label for="callerid" class="form-label">Caller ID:</label>
+       <input type="text" id="callerid" v-model="callerId" class="form-input" required>
+       
+       <label for="context" class="form-label">Context:</label>
+       <input type="text" id="context" v-model="context" class="form-input" required>
+       
+       <button type="submit" class="form-button">Submit</button>
+     </form>
+   </div>
+  </WelcomeItem>
 </template>
 
 <style scoped>
@@ -58,6 +60,7 @@
 </style>
 
 <script>
+import WelcomeItem from './WelcomeItem.vue'
 export default {
   data() {
     return {
