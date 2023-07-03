@@ -6,9 +6,7 @@ import NewNumber from '../components/NewNumber.vue'
   <div class="about">
     <h1>Enter New Number To Be Added</h1>
   </div>
-  <main>
     <NewNumber />
-  </main>
 </template>
 
 <style>
