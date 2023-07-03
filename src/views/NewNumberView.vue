@@ -3,9 +3,6 @@ import NewNumber from '../components/NewNumber.vue'
 </script>
 
 <template>
-  <div class="about">
-    <h1>Enter New Number To Be Added</h1>
-  </div>
     <NewNumber />
 </template>
 
