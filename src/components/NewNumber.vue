@@ -58,6 +58,7 @@
 </style>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
@@ -75,6 +76,15 @@ export default {
         callerId: this.callerId,
         context: this.context
       };
+
+      axios.post('http://10.149.127.53:3000/api/submit-form', formData)
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    
       
       // Emit an event with the form data
       this.$emit('formSubmitted', formData);
